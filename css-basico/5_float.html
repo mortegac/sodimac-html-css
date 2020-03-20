@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+
+    .caja{
+        height:200px;
+        padding:50px;
+        float:left;
+        border:5px solid rgb(241, 246, 172);
+        color:#fff;
+        font-size:32px;
+        text-align: center;
+    }
+
+    h3{
+        color: rgb(241, 246, 172);
+    }
+
+    .clear{
+        clear:both;
+    }
+    /* 
+    div[class*="caja-"]{
+        height:200px;
+        padding:50px;
+        float:left;
+        border:5px solid #fff;
+        color:#fff;
+        font-size:32px;
+    }	 
+    */
+
+   
+
+    .caja-1,.caja-2,.caja-3{
+        width:33.33%;
+        height:200px;
+        background-color:#bb00bb;
+        border:5px solid #fff;
+    }
+    .caja-4{
+        width:100%;
+        background-color:#252525;
+    }	
+    .caja-5{
+        width:33%;
+        background-color:#6499fc;
+    }
+    .caja-6, .caja-7, .caja-8{
+        width:33.33%;
+        background-color:#ff0064;
+    }
+</style>
+
+</head>
+<body>
+    
+
+    <!-- div.caja.caja-$*8 -->
+
+    <div class="caja caja-1"><h3>Caja-1</h3></div>
+    <div class="caja caja-2"><h3>Caja-2</h3></div>
+    <div class="caja caja-3"><h3>Caja-3</h3></div>
+    <div class="caja caja-4"><h3>Caja-4</h3></div>
+    <div class="caja caja-5"><h3>Caja-5</h3></div>
+    <div class="caja caja-6"><h3>Caja-6</h3></div>
+    <div class="caja caja-7 clear"><h3>Caja-7</h3></div>
+    <div class="caja caja-8"><h3>Caja-8</h3></div>
+</body>
+</html>
