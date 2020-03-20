@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="1_usando-css.css" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .title { 
+            color: rgb(38, 193, 193);
+            display: block;
+            font-size: 48px;
+            text-align: center;
+        }
+        .subTitle { 
+            color: rgb(189, 180, 95);
+            display: block;
+            font-size: 28px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Caso 1: INLINE -->
+    <span style='color: rgb(38, 193, 193);display: block;font-size: 48px;text-align: center;'>Bienvenidos</span>
+    <span style='color: rgb(189, 180, 95);display: block;font-size: 28px;text-align: center;'>al curso de CSS</span>
+
+    <br />
+    <br />
+    <hr />
+    <!-- Caso 2: CLASS -->
+    <span class='title'>Bienvenidos</span>
+    <span class='subTitle'>al curso de CSS</span>
+    <br />
+    <br />
+    <hr />
+    <!-- Caso 3: CSS EXTERNO -->
+    <span class='titleExterno'>Bienvenidos</span>
+    <span class='subTitleExterno'>al curso de CSS</span>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+}
+
+.titleExterno { 
+    color: rgb(38, 193, 193);
+    display: block;
+    font-size: 48px;
+    text-align: center;
+}
+.subTitleExterno { 
+    color: rgb(189, 180, 95);
+    display: block;
+    font-size: 28px;
+    text-align: center;
+}
