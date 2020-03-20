@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="1_usando-css.css" rel="stylesheet" type="text/css">
+    <style>
+        /* *{ margin:0;} */
+        body {
+            text-align: center;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            border: 1px dashed;
+        }
+        section {
+            background-color: rgb(255, 250, 215);
+            padding: 10px 10px;
+        }
+        article {
+            background-color: rgb(218, 247, 177);
+            margin: 2rem;
+            border:5px rgb(115, 175, 175) solid;
+            margin: 100px ;
+            padding: 4rem;
+        }
+        p{
+            border: 1px solid black;
+            outline-style: solid;
+            outline-color: red;
+            outline-width: 2rem;
+            display: inline-block;
+            width: 200px;
+            height: 300px;
+        }
+
+        .contacto{ 
+            border: 1px dashed #cccccc;
+            padding: 10px;
+            width: 300px;
+
+            /* Posicionar  al centro horizontal y verticalmente */
+            /* Explicación
+            Agregar la parte superior / izquierda del 50% mueve el borde del margen superior / izquierdo del elemento al centro del elemento primario, y la función translate () con el valor (negativo) de -50% mueve el elemento por la mitad de su tamaño. Por lo tanto, el elemento se colocará en el medio.
+
+            Esto se debe a que un valor porcentual en las propiedades superiores / izquierdas es relativo a la altura / anchura del elemento primario (que está creando un bloque contenedor).
+
+            Mientras que un valor de porcentaje en la función de transformación translate () es relativo al ancho / alto del elemento en sí (en realidad se refiere al tamaño del cuadro delimitador).
+
+            Para la alineación unidireccional, vaya con translateX (-50%) o translateY (-50%) en su lugar. */
+            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* FIN: Posicionar  al centro horizontal y verticalmente */
+
+
+            background-color: white;
+        }
+        .contacto input{
+            width: 100%;
+            height: 30px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type=button], input[type=submit], input[type=reset] {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+            }
+
+    </style>
+</head>
+<body>
+    <section>
+        <article>
+            <h3>Reseteando tu hoja de estilo</h3>
+            <p>Te parecerá extraño pero aunque empieces tu hoja de estilo desde cero, es posible que para los navegadores tu diseño no parta de cero. Por ello lo primero es poner a todos los navegadores de acuerdo y que no se tomen licencias que tú no quieres a la hora de considerar algunos espacios o dismensiones. Esto se hace a través de la técnica del CSS Reset sobre la que por cierto hay muchas variaciones </p>
+        </article>
+    </section>
+
+    <div class='contacto'>
+        <form actio="#" method="GET">
+            <label for="nombre">Nombres:</label><br>
+            <input type="text" name="nombre" value=''>
+            <label for="apellido">Apellidos:</label><br>
+            <input type="text" name="apellido" value=''>
+            <br />
+            <input type="button" value='BUTTON'>
+            <input type="reset" value='RESET'>
+            <input type="submit" value='SUBMIT'>
+
+        </form>
+
+
+    </div>
+
+
+
+    
+
+    <div>
+
+    </div>
+  
+</body>
+</html>
