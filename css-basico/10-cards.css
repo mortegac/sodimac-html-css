@@ -1,0 +1,105 @@
+body
+{
+    background: #cfd8dc;
+    font-size: 14px;
+}
+
+.card-container
+{
+    font-family: 'Open Sans', sans serif;
+    width: 25%;
+    /* height: 250px; */
+    margin: 80px auto;
+}
+
+.card-header{
+    width: 100%;
+    height: 300px;
+    background-repeat: repeat-x;
+    background-position: center;
+    background-attachment: initial;
+    /* background-size: cover; */
+    background-size: 100%;
+    background-image: url(https://s1.iconbird.com/ico/0912/MetroUIDock/w512h5121347464662HTML5.png);
+}
+
+
+
+.card
+{
+    position: relative;
+    height: 100%;
+    
+    /* display: inline-block; */
+}
+.card-1 {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  
+  .card-1:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+.content
+{
+    padding: 20px 40px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    color: #fff;
+    background: #fff;
+}
+
+.content h3 p {
+    display: block;
+}
+
+.content h3 {
+    font-size: 30px;
+    color: rgb(22, 22, 22);
+}
+.content p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: rgb(77, 77, 77);
+    text-align: justify;
+}
+.content a {
+    margin: 20px 0;
+    padding: 10px;
+    color: rgb(22, 22, 22);
+    font-size: 22px;
+    border-radius: 10px;
+    background-color: rgba(245, 215, 215, 0.933);
+    color:#c00808;
+    
+    width: 200px;
+    height: 50px;
+    display: block;
+    text-align: center;
+}
+
+
+/* .align{
+    line-height: 30px;
+} */
+
+/* 
+@media screen and  (min-width:  600px) {
+    
+    .card-container
+    {
+        width: 96%;
+    }
+    .content h3 {
+        font-size: 36px;
+        
+    }
+    .content p {
+        font-size: 22px;
+        color: rgb(49, 46, 46);
+    }
+
+
+  } */
