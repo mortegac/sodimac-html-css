@@ -1,0 +1,32 @@
+
+
+body {
+    text-align: center;
+    margin: 10px;
+    padding: 100px;
+    border: 1px dashed;
+}
+
+
+.contenido-centro{
+    border:1px solid green;
+    width: 100%;
+    padding: 30px;
+    background-color: #eaeaea47;;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+article{
+    background-color: #9ef;
+    padding: 3px;
+    margin: 5px;
+    width: 40%;
+}
+
+
+
