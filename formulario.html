@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./formulario.css">
+</head>
+<body>
+    
+    <header class='speaker-form-header'>
+        <h1>Ingreso de Charla</h1>
+        <p><em>Si quiere hablar en nuestra conferencia 
+            Complete el formulario</em></p>
+    </header>
+
+    <form action='' method="GET" class='speaker-form'>
+        
+        <!-- CAMPOS DE ENTRADA DE DATOS -->
+        <div class="form-row">
+            <label for="nameForm">Nombre</label>
+            <input name="nameForm" type="text">
+        </div>
+
+        <div class="form-row">
+            <label for="mailForm">Email</label>
+            <input name="mailForm" type="email" placeholder="joe@example.com">
+        </div>
+
+       <!-- Botones del tipo Radio -->
+       <fieldset class="form-row-legacy">
+            <legend>Tipo de charla</legend>
+
+            <input 
+                id="charlaForm"
+                name="charlaForm" 
+                type="radio" 
+                value="Charla">
+            <label for="charlaForm">Charla Breve</label>
+
+            <input 
+                id="tallerForm"
+                name="charlaForm" 
+                type="radio" 
+                value="Taller" 
+                checked >
+            <label for="tallerForm">Taller</label>
+       </fieldset>
+        
+       <!-- Elementos seleccionables -->
+       <div class="form-row">
+           <label for="t-shirt">Tamaño de polera</label>
+           <select name="t-shirt">
+               <option value="xs">Extra Small</option>
+               <option value="s">Small</option>
+               <option value="m">Medium</option>
+               <option value="l">Large</option>
+           </select>
+       </div>
+
+       <div class="form-row">
+           <label for="contentForm">Contenido charla</label>
+            <textarea name="contentForm"></textarea>
+            <div class="instructions">Describa su charla en 500 caracteres</div>
+       </div>
+
+        <!-- Casilla de verificación -->
+       <div class="form-row">
+            <label class='checkbox-label' for='available'>
+            <input id='available'
+                   name='available'
+                   type='checkbox'
+                   value='is-available'/>
+            <span>Tengo disponibilidad el día de la charla</span>
+            </label>
+       </div>
+
+       <!-- Botón -->
+       <div class="form-row">
+            <button>Enviar</button>
+        </div>
+
+
+
+
+
+    </form>
+
+</body>
+</html>
