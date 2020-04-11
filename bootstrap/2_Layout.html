@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link href="https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <style>
+         .theme-container {
+            padding: 15px;
+            margin-bottom: 30px;
+            background-color: rgba(0, 123, 255, .15);
+            border: 1px solid rgba(0, 123, 255, .2);
+        }
+        .theme-col {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: rgba(86, 61, 124, .15);
+            border: 1px solid rgba(86, 61, 124, .2);
+        }
+    </style>
+
+</head>
+<body class="py-4">
+
+
+    <div class="container theme-container">
+        
+        <div class="row">
+            <div class="col bg-primary theme-col m-2">Columna 1</div>
+            <div class="col bg-danger theme-col m-2">Columna 2</div>
+            <div class="col bg-warning theme-col m-2">Columna 3</div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="col-sm-12 col-lg-3 col-lg-3 bg-secondary m-1">Producto</div>
+                <div class="col-sm-12 col-lg-3 bg-secondary m-1">Producto</div>
+                <div class="col-sm-12 col-lg-3 bg-secondary m-1">Producto</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid theme-container">
+        <div class="row">
+            <div class="col bg-primary theme-col m-1">Columna 1</div>
+            <div class="col bg-danger theme-col m-1">Columna 2</div>
+            <div class="col bg-warning theme-col m-1">Columna 3</div>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

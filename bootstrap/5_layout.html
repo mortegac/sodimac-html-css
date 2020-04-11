@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Layout</title>
+    <link href="https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://themesguide.github.io/top-hat/dist/electro/theme.css" rel="stylesheet">
+
+    
+    <style>
+        .theme-col {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: rgba(86, 61, 124, .15);
+            border: 1px solid rgba(86, 61, 124, .2);
+        }
+        .theme-container {
+            padding: 15px;
+            margin-bottom: 30px;
+            background-color: rgba(0, 123, 255, .15);
+            border: 1px solid rgba(0, 123, 255, .2);
+        }
+        .theme-grid-col {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: rgba(86, 61, 124, .15);
+            border: 1px solid rgba(86, 61, 124, .2);
+        }
+        .theme-grid-col2 {
+            background-color: rgb(97, 197, 172);
+            border: 1px solid rgb(10, 85, 66);
+        }
+
+        .item{
+            height: 200px;
+            overflow: scroll;
+
+        }
+
+        .carousel-item img{
+            width: 100%;
+            height: 500px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+
+    <div class="container theme-container mb-5">
+        
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" 
+            role="progressbar" 
+            aria-valuenow="68" 
+            aria-valuemin="0" 
+            aria-valuemax="100" 
+            style="width: 75%">75%</div>
+          </div>
+
+
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+
+            <!-- CARRUSEL -->
+            <div class="row">
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="500">
+                   
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="https://source.unsplash.com/7i6nAWPiDhI" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Primera Contenido</h5>
+                            <p class="text-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus veritatis labore quas. Deleniti, ratione optio iste beatae in, dolore a necessitatibus excepturi alias suscipit cupiditate omnis, voluptate placeat ullam! Pariatur.</p>
+                          </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://source.unsplash.com/hNPX9p95CGc" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Segundo Contenido</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus veritatis labore quas. Deleniti, ratione optio iste beatae in, dolore a necessitatibus excepturi alias suscipit cupiditate omnis, voluptate placeat ullam! Pariatur.</p>
+                          </div>
+                      </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://source.unsplash.com/tncsQE63ENU" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Tercer Contenido</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus veritatis labore quas. Deleniti, ratione optio iste beatae in, dolore a necessitatibus excepturi alias suscipit cupiditate omnis, voluptate placeat ullam! Pariatur.</p>
+                          </div>
+                      </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
+            </div>
+                    
+
+            <div class="row">
+                <figure class="figure">
+                    <img src="https://dummyimage.com/400x200/563d7c/fff" class="figure-img img-fluid rounded" alt="">
+                    <figcaption class="figure-caption">Figure caption description text</figcaption>
+                  </figure>
+            </div>
+            <div class="row">
+
+                <!-- EJEMPO DE TABLA  -->
+                <table class="table ">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th>#</th>
+                        <th>thead-dark</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Nina</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Penta</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Santa Maria</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+
+            </div>
+        
+        <div class="row">
+            <section class="col-3 border-right">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                    <a class="nav-link active" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="col-9">
+
+                <nav class="breadcrumb">
+                    <a class="breadcrumb-item" href="#">Home</a>
+                    <a class="breadcrumb-item" href="#">Library</a>
+                    <span class="breadcrumb-item active">Breadcrumb</span>
+                </nav>
+
+                <h4 class="pt-5">Contenido</h4>
+                <hr>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="card" style="width: 50%">
+                            <img class="card-img-top" src="https://source.unsplash.com/Koei_7yYtIo" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                          <div class="card"  style="width: 40%">
+                            <img class="card-img-top" src="https://source.unsplash.com/_pPHgeHz1uk" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="row mt-1 justify-content-">
+
+                        <div class="item col bg-warning m-2">Producto</div>
+                        <div class="item col bg-warning m-2">Producto</div>
+                        <div class="item col bg-warning m-2">Producto</div>
+                    </div>
+                </div>
+
+            </section>
+
+            <div class="col-12">
+                <!-- Button trigger modal -->
+                <button 
+                    type="button" 
+                    class="btn btn-primary" 
+                    data-toggle="modal" 
+                    data-target="#exampleModal">
+                    Launch demo modal
+                </button>
+                
+                <!-- Modal -->
+                <div 
+                    class="modal fade" 
+                    id="exampleModal" 
+                    tabindex="-1" 
+                    role="dialog" 
+                    aria-labelledby="exampleModalLabel" 
+                    aria-hidden="true"
+                >
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        
+                        <div class="modal-body">
+                            <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus vitae expedita totam veniam saepe fuga pariatur iusto iure, rem maiores impedit non doloribus, vero necessitatibus voluptates ratione aliquid laborum corrupti.</h6>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="col-12">
+
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" readonly>
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+
+            </div>
+
+            <div class="col-12">
+                
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-dark">Dark</button>
+
+                <button type="button" class="btn btn-link">Link</button>
+            </div>
+
+
+        </div>
+
+        
+        
+    </div>
+    
+    <div class="container-fluid">
+        <footer class="col-12 bg-info p-0">
+            <h3>Soy el Footer</h3>
+        </footer>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+
+
+
+</body>
+</html>
